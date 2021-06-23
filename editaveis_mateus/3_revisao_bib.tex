@@ -1,7 +1,7 @@
 \chapter{Referencial Teórico}
 \label{chap:ref}
 
-Neste capítulo são apresentados os conceitos base para a realização deste trabalho. As seções a seguir tratam sobre Interação Humano-Computador, Personas e Jogos. Por fim, são apresentados os trabalhos relacionados ao tema deste projeto.
+Neste capítulo são apresentados os conceitos base para a realização deste trabalho. As seções a seguir tratam sobre a teoria relacionada a Interação Humano-Computador, Personas, Jogos, Playcentric Design Process e Metodologia de Desenvolvimento de Software. Por fim, são apresentados os trabalhos relacionados ao tema deste projeto.
 
 \section{Interação Humano-Computador}
 
@@ -71,7 +71,9 @@ A qualidade de uso trata do estudo daquilo que envolve a interação entre seres
 
 \citeonline{barbosa_silva} descrevem como critérios de qualidade na interação dos usuários com as interfaces: a usabilidade; a experiência do usuário; a acessibilidade; e a comunicabilidade. \citeonline{Petri_Wangenheim_2019} focaram em trabalhar com a qualidade de jogos educacionais por meio do modelo MEEGA+, que visa os fatores de usabilidade e experiência do jogador a partir da perspectiva do aluno. 
 
-\citeonline{Petri_Wangenheim_2019} definem usabilidade como \textit{"o grau em que um produto (jogo educacional) pode ser usado por usuários específicos (alunos) para atingir objetivos específicos com eficácia e eficiência em um contexto de uso especificado (educação em computação), sendo composto pelas seguintes dimensões: estética, capacidade de aprendizagem, operabilidade e acessibilidade"}. E definem a experiência do jogador como \textit{"um fator de qualidade que abrange um envolvimento profundo do aluno na tarefa de jogo, incluindo sua percepção de aprendizagem, sentimentos, prazeres e interações com o jogo, ambiente e outros jogadores, sendo composta pelas seguintes dimensões: atenção focada, diversão, desafio, interação social, confiança, relevância, satisfação e aprendizagem percebida"}. A tabela com os fatores dimensões e definição do modelo MEEGA+ pode ser encontrada no Anexo \ref{an:meega}. % citação direta - MEEGA+ pg 5
+{\color{textmodified}
+\citeonline{Petri_Wangenheim_2019} definem usabilidade como \textit{"o grau em que um produto (jogo educacional) pode ser usado por usuários específicos (alunos) para atingir objetivos específicos com eficácia e eficiência em um contexto de uso especificado (educação em computação), sendo composto pelas seguintes dimensões: estética, capacidade de aprendizagem, operabilidade e acessibilidade"}. E definem a experiência do jogador como \textit{"um fator de qualidade que abrange um envolvimento profundo do aluno na tarefa de jogo, incluindo sua percepção de aprendizagem, sentimentos, prazeres e interações com o jogo, ambiente e outros jogadores, sendo composta pelas seguintes dimensões: atenção focada, diversão, desafio, interação social, confiança, relevância, satisfação e aprendizagem percebida"}. A tabela com os fatores dimensões e definição do modelo MEEGA+ pode ser encontrada no artigo \citeonline[p. 5]{Petri_Wangenheim_2019}. % citação direta - MEEGA+ pg 5
+}
 
 Segundo \citeonline[p. 13, 14, 28]{barbosa_silva} trabalhar bem esses critérios contribui de forma benéfica para com o produto e consequentemente para com o usuário. São estes os benefícios: %IHC pag 13-14, 28
 
@@ -84,7 +86,7 @@ Segundo \citeonline[p. 13, 14, 28]{barbosa_silva} trabalhar bem esses critérios
 
     \item reduzir o custo de suporte técnico, pois caso ocorra algum erro o próprio sistema irá direcionar o usuário para resolve-lo; e
 
-    \item e aumentar as vendas e a fidelidade do cliente, pois com a satisfação do usuário há um aumento da confiança e aquisição de novas versões e outros sistemas.
+    \item aumentar as vendas e a fidelidade do cliente, pois com a satisfação do usuário há um aumento da confiança e aquisição de novas versões e outros sistemas.
 \end{itemize}
 
 Na sequência é apresentada a técnica de personas. Esta se enquadra na visão de IHC no quesito de buscar abstrair melhor os desejos do usuário sobre o uso de um sistema interativo. 
@@ -157,18 +159,127 @@ Nesta seção são apresentados a definição de jogos e jogos sérios encontrad
 
 Segundo \citeonline{Fullerton_2008} jogo é \textit{"um sistema fechado e formal que envolve os jogadores em conflitos estruturados e resolve sua incerteza em um resultado desigual."} Quando é dito que jogos são sistemas fechados, trata-se dos limites. Um jogo possui regras, contexto e demais elementos restritos a ele que são separados do mundo real e suas regras, contexto e entre outros elementos. 
 
-Os jogos são formais, ou seja, são estruturados por elementos formais que se relacionam entre si, que podem se diversificar dependendo do tipo de jogo. Juntamente com esse elementos formais os jogos contemplam elementos dramáticos, que assim estruturam um conflito que envolve um ou mais jogadores. E por fim os jogos envolvem incerteza quanto aos seus resultados desiguais, em que, enquanto não há resultado existe a incerteza e quando há resultado, este é desigual sempre havendo vencedores e/ou derrotados, seja entre jogadores ou entre um jogador e algum desafio \cite{Fullerton_2008}.
+Os jogos são formais, ou seja, são estruturados por elementos formais que se relacionam entre si, que podem se diversificar dependendo do tipo de jogo. Juntamente com esse elementos formais os jogos contemplam elementos dramáticos, que assim estruturam um conflito que envolve um ou mais jogadores. E por fim os jogos envolvem incerteza quanto aos seus resultados desiguais, em que, enquanto não há resultado existe a incerteza e quando há resultado, este é desigual sempre havendo vencedores e/ou derrotados, seja entre jogadores ou entre um jogador e algum desafio do próprio jogo \cite{Fullerton_2008}.
 
 Uma outra definição mais prática abordada por \cite{McGonigal_Rieche_2012} é que os jogos compartilham de quatro características que os definem: meta, regras, sistema de \textit{feedback} e participação voluntária. Demais elementos formais e dramáticos como interatividade, gráficos, narrativa, recompensas, competitividade, personagens, gênero dentre outros, são características comuns a muitos jogos, mas não definidoras \cite{Vianna_Vianna_Medina_Tanaka_Krug_2013}.
 
-A academia veio pesquisando ao longo do tempo formas alternativas e instigadoras para motivar a aprendizagem dos alunos e um desses meios são os jogos. No geral, foi observado nos jogos a sua capacidade de atrair e motivar as pessoas e de gerar engajamento e dedicação na realização de tarefas \cite{Vianna_Vianna_Medina_Tanaka_Krug_2013}. Os Jogos Sérios (\textit{Serious Games}) são jogos com uma finalidade que vai além do entretenimento. No caso da educação, o uso de jogos busca tornar o processo de ensino-aprendizagem mais atrativo e proveitoso, desenvolvendo no estudante habilidades cognitivas através da prática e engajar os alunos nesse processo \cite{sommariva, queiroz, darin}.
+A academia veio pesquisando ao longo do tempo formas alternativas e instigadoras para motivar a aprendizagem dos alunos e um desses meios são os jogos. No geral, foi observado nos jogos a sua capacidade de atrair e motivar as pessoas e de gerar engajamento e dedicação na realização de tarefas \cite{Vianna_Vianna_Medina_Tanaka_Krug_2013}. 
 
-Existem várias áreas onde o jogos são aplicados no intuito de auxiliar o ensino e aprendizagem. Uma dessa áreas é a de Interação Humano-Computador \cite{Sales2020, Sales2020UsoTDS}.
+Os Jogos Sérios (\textit{Serious Games}) são jogos com uma finalidade que vai além do entretenimento. No caso da educação, o uso de jogos busca tornar o processo de ensino-aprendizagem mais atrativo e proveitoso, desenvolvendo no estudante habilidades cognitivas através da prática e engajar os alunos nesse processo \cite{sommariva, queiroz, darin}. Existem várias áreas onde o jogos são aplicados no intuito de auxiliar o ensino e aprendizagem. Uma dessa áreas é a de Interação Humano-Computador \cite{Sales2020, Sales2020UsoTDS}.
+
+
+\section{Playcentric Design Process}
+\label{sec:play}
+
+O \textit{Playcentric Design Process} é um método de desenvolvimento de jogos digitais cuja abordagem  concentra-se em envolver o jogador no processo de construção, desde a concepção até a conclusão. Dessa forma, é possível manter continuamente a experiência do jogador em mente, tendo como objetivo torná-la satisfatória para seus jogadores-alvo \cite[p. 10]{Fullerton_2008}. 
+
+Segundo \citeonline[p. 10, 11]{Fullerton_2008} o primeiro passo para se incluir o jogador no processo de desenvolvimento de um jogo é definir as metas de experiência do jogador. Elas não são simplesmente as características do jogo, mas sim descrições que despertam interesse no jogador. % playcentric pg 10-11
+
+\subsection{Princípio Iterativo}
+
+O processo em que o \textit{Playcentric Design Process} se baseia conta com um princípio iterativo, o qual o jogo vai ganhando forma pouco a pouco. Segundo \citeonline[p. 11]{Fullerton_2008}, cada nova ideia que surge deve ser formalizada, testada e então validada. A partir disso a ideia é descartada ou refinada até que seja agregada ao jogo algo que realmente venha satisfazer o jogador-alvo. Esses passos devem ser executados do início ao fim do projeto, para que o foco permaneça na satisfação do jogador-alvo e além de ser possível corrigir o quanto antes as falhas de design. % playcentric pg 11
+% cap 9 - métodos para melhoria do design
+
+Essa dinâmica iterativa é o fundamento do método \textit{Playcentric Design Process}. A Figura \ref{Fig:playcentric_process.png} mostra as etapas descritas anteriormente.
+ 
+\begin{figure}[htbp]
+	\centering
+		\includegraphics[keepaspectratio=true,scale=0.5]{figuras/playcentrtic_process.png}
+	\caption{Diagrama de Processo Iterativo - adaptado de \citeonline{Fullerton_2008}}
+	\label{Fig:playcentric_process.png}
+\end{figure}
+
+
+Este processo iterativo inicia-se com a concepção e finaliza com um elemento que irá agregar ao jogo ou a ideia é refinada em mais uma rodada seguindo os passos do processo iterativo \cite[p. 14]{Fullerton_2008}: 
+
+\begin{itemize}
+    \item Concepção de uma ideia ou sistema;
+    \item Formalização da ideia ou sistema;
+    \item Teste da ideia ou sistema formalizado, em relação às metas de experiência do jogador;
+    \item Avaliação e priorização dos resultados do teste;
+    \item Se os resultados forem negativos e a ideia ou sistema parecerem falhos, o processo retorna para a etapa de concepção;
+    \item Se os resultados apontam para melhorias, são feitas as modificações necessárias e assim testadas novamente; e
+    \item Se os resultados forem positivos e a ideia ou sistema parecerem bem-sucedidos, o processo iterativo é concluído. 
+\end{itemize}
+
+
+
+\subsection{Passo a Passo do Processo}
+
+O \textit{Playcentric Design Process} é formado por alguns passos. Estes são etapas que servem para nortear o progresso do projeto de um jogo. Como pode ser visto na Figura \ref{Fig:playcentric.png}, o \textit{Playcentric Design Process} possui sete passos principais. 
+
+\begin{figure}[htbp]
+	\centering
+		\includegraphics[keepaspectratio=true,scale=0.58]{figuras/playcentrtic.png}
+	\caption{\textcolor{textmodified}{Fluxo Playcentric Design Process - Fonte: Mateus Augusto}}
+	\label{Fig:playcentric.png}
+\end{figure}
+\newpage
+Pode ser observado que apenas o passo \textit{Apresentação} não segue o fluxo iterativo, além de ser opcional dentro do processo. A seguir estes passos estão descritos com mais detalhes:
+
+\begin{enumerate}
+    {\color{textmodified}
+    \item \textbf{Brainstorming:} Este primeiro passo recebe esse nome por se fundamentar basicamente nessa técnica, porém a técnica de \textit{brainstorming} pode ser usada em outros passos da fase de desenvolvimento. A técnica de \textit{brainstorming} tem a finalidade de fornecer de uma forma bastante livre, um conjunto de informações e opiniões sobre o tema e os elementos que envolvem o projeto \cite[p. 155]{barbosa_silva}. Este é o pontapé inicial onde são concebidas as primeiras ideias ou sistemas de mecânica de jogo que poderão alcançar uma determinada meta de experiência do jogador. Essas ideias e sistemas são descritos brevemente e documentados. Por fim, estes conceitos são testados com jogadores em potencial \cite[p. 14, 15]{Fullerton_2008}. % Playcentric pg 15
+   
+    \item \textbf{Protótipo Físico:} Similar ao anterior, este passo leva o nome da técnica base. O objetivo é realizar um sub-projeto e revisão de alto nível \cite[p. 63]{Pressman_2000}, no qual se segue uma preparação, coleta de dados, interpretação, consolidação e relato dos resultados \cite[p. 358]{barbosa_silva}. Fica a critério do designer qual o modelo será usado \cite[p. 15]{Fullerton_2008}, podendo ser feito com papel, fichas, papelão, maquetes, figuras de plástico etc. O ponto chave do uso dessa técnica é a praticidade de se elaborar e fazer alterações, a interação que há com o jogador e o foco da equipe de design permanecer em validar conceitos sem a preocupação com o desenvolvimento do código do jogo \cite[p. 15]{Fullerton_2008}. Outro ponto chave é que ele deve ser criado artesanalmente a partir dos conceitos elaborado e validados no passo anterior, de forma que possa ser "jogado". Ele então é testado e os resultados que demonstrarem uma jogabilidade funcional que atinge as metas de experiência do jogador devem ser descritas e documentadas \cite[p. 15]{Fullerton_2008}. % Playcentric pg 15; ES pg 74 %trazer referência técnica sobre prototipação de papel
+    }
+\newpage
+    \item \textbf{Apresentação:} Este é um passo opcional em que o projeto é demonstrado às partes interessadas que podem financiar o desenvolvimento do jogo. Porém mesmo que não haja um necessidade de financiamento, o exercício de realizar uma apresentação completa é uma boa maneira de receber \textit{feedbacks} \cite[p. 15]{Fullerton_2008}.
+    
+    {\color{textmodified}
+    \item \textbf{Protótipo de Software:} A partir dos modelos de protótipo físico elaborados e validados é possível começar a criação dos modelos de protótipos de software. Neste passo ainda deve se pensar em economia de tempo e não detalhar muito os aspectos e características do jogo, apenas o necessário para o teste. Seguindo o fluxo iterativo, agora o protótipo é testado e caso demonstre uma jogabilidade funcional que atinja as metas de experiência do jogador, o processo segue para o próximo passo, mas caso não, o protótipo ainda entra em mais ciclos de refino até que seja atingidas as metas objetivadas \cite[p. 15]{Fullerton_2008}. Essa abordagem de construção, do protótipo de baixa-fidelidade, de alta-fidelidade e o software final é denominada de "abordagem evolutiva", em que o produto de software não sai do zero para o final, mas sim passa por etapas intermediárias \cite[p. 268]{Preece_Rogers_Sharp_2005}. % Playcentric pg 15
+    % Falar do modelo evolutivo de protótipo e sobre protótipo de alta fidelidade
+    }
+    
+    \item \textbf{Documento de Design:} Neste ponto são especificados em um documento todas as ideais e aspectos do jogos até então definidos. Este é comumente chamado de Documento de Design \cite[p. 15]{Fullerton_2008}. Exitem várias formas de se especificar um sistema, porém o artefato deve ter um caráter flexível  \cite[p. 129]{Pressman_2000}. Os documentos de design não necessitam ser rigorosamente escritos inicialmente, mas estes vão sendo refinados ao longo do processo até alcançar um nível mais completo e daí pronto para iniciar a fase de produção \cite[p. 15]{Fullerton_2008}. % Playcentric pg 15; ES pg 129
+
+    \item \textbf{Produção:} Depois de todos esses passos de planejamento estarem bem fundamentados se inicia a criação da arte e da programação real do jogo. Para isso é feita a configuração do ambiente de desenvolvimento e é seguido algumas práticas metodológicas para a implementação do software. Paralelo a isso continua-se o processo iterativo de teste, avaliação e melhoria e a medida que isso for acontecendo os artefatos de design vão sendo refinados \cite[p. 41]{Pressman_2000} \cite[p. 15, 18]{Fullerton_2008}. 
+    
+    \item \textbf{Garantia da Qualidade:} Neste último passo o projeto deve estar pronto para o teste de qualidade, já com uma jogabilidade bem sólida. Aqui é momento em que o jogo é trabalhado para ser acessível a todo o público-alvo \cite[p. 18]{Fullerton_2008}. % Playcentric pg 18
+    
+\end{enumerate}
+\newpage
+Na seção seguinte estão descritas brevemente sobre algumas metodologias de desenvolvimento de software. Essas metodologias foram utilizadas para compor, junto ao \textit{Playcentric Design Process}, o processo de desenvolvimento do jogo descrito na Seção \ref{sec:pdj} do capítulo anterior.
+
+% Seção sobre metodologias de desenvolvimento em equipe (Scrum, XP, etc)
+{\color{textadded}
+\section{Metodologias de Desenvolvimento de Software}
+\label{sec:mds}
+
+Nesta seção são apresentados alguns métodos que auxiliam no desenvolvimento do software. São eles o Scrum, o Extreme Programming e o Kanban.
+
+\subsection{Scrum}
+
+O Scrum é uma metodologia de desenvolvimento ágil que contém diversas rotinas que visam manter a equipe engajada e atualizada sobre o projeto \cite{schwaber2002agile}. Nele são definidos papéis para os integrantes da equipe, sendo eles \textit{product owner}, \textit{scrum master} e o desenvolvedor. Dentro do Scrum existem eventos que acontecem durante todo o processo de desenvolvimento, entre eles estão a \textit{sprint}, \textit{sprint planning}, \textit{sprint review}, \textit{sprint retrospective} e a \textit{daily}.
+
+Uma \textit{sprint} é um evento que geralmente possui um período de 1 a 4 semanas para o desenvolvimento do produto. O \textit{sprint planning} é a reunião que da início a uma \textit{sprint}, onde a equipe toma a decisão do que será feito. Durante o \textit{sprint review} é analisado o que foi entregue e o que ficou como dívida técnica. Já na \textit{sprint retrospective} é levantado pontos positivos, negativos e melhorias referentes á aquela \textit{sprint}. A \textit{daily} é um encontro diário rápido para o alinhamento do andamento da \textit{sprint}, onde é apresentado o que foi realizado desde a última \textit{daily}, o que será feito até a próxima e os impedimentos para a continuação de suas tarefas.
+
+Na subseção a seguir é apresentado uma outra metodologia ágil que é comumente usada em conjunto com o Scrum, o Extreme Programming.
+
+\subsection{Extreme Programming (XP)}
+
+O Extreme Programming (XP) é uma metodologia ágil com o foco em produzir software de qualidade e fornecer qualidade de vida aos desenvolvedores \cite{lindstrom2004extreme}. A metodologia se baseia em cinco valores básicos que visam ser trabalhados durante o desenvolvimento do software: comunicação, simplicidade, \textit{feedback} constante, coragem e respeito.
+
+O objetivo do XP é levar ao extremo as denominadas "boas práticas", definas dentro da engenharia de software, algumas destas práticas que costumam ser seguidas entre os desenvolvedores são: comentários no código, pequenas entregas, programação em pares, testes de aceitação, integração contínua e outros.
+
+%falar mais sobre o XP
+
+\subsection{Kanban}
+
+O Kanban é uma forma de organização de tarefas, muito comum no desenvolvimento ágil \cite{kniberg2010kanban}. Ele é um tipo de simbologia visual usada no desenvolvimento de produtos que registra o progresso das atividades.
+
+O progresso das atividades é visualizado através de colunas, onde cada uma representa o estado atual de uma tarefa. Existem as colunas de 'a fazer', 'fazendo' e 'feito', na qual são completamente customizáveis, podendo ser adicionado novas colunas que façam sentido para o seu processo de desenvolvimento.
+
+\subsection{Desenvolvimento e Operações (DevOps)}
+
+A presença de Desenvolvimento e Operações (DevOps) tem sido cada vez mais presente dentro do desenvolvimento de software \cite{devops_adoption}, resultando em diversos benefícios para um projeto de software. O termo DevOps é uma combinação de desenvolvimento com operações, trazendo uma maior integração entre essas duas áreas. Dentro de DevOps são feitas diversas automações no processo de desenvolvimento e entregas do software \cite{ebert2016}. Essas automações auxiliam tanto o desenvolvimento, com a entrega de um ambiente pré-configurado, sem a necessidade do time de desenvolvimento se preocupar com maiores complicações na configuração do ambiente de desenvolvimento. Adicionalmente, permite ao projeto a realização de entregas contínuas \cite{humble2010continuous}. Cada entrega passa por uma série de etapas automatizadas que avaliará a qualidade do que está sendo entregue. Caso o código possua uma boa classificação, é então realizada a entrega ao usuário.
+
+}
 
 \section{Trabalhos Correlatos}
 \label{sec:trab_cor}
 
-Nesta sessão estão apresentados os estudos sobre jogos educacionais em IHC, aplicados em cursos de graduação e pós graduação. Estes trabalhos são resultado de uma Revisão Sistemática de Literatura da pesquisa de \citeonline{deSales_SousaeSilva_2020}. No estudo foram identificados seis jogos e suas características, os requisitos não funcionais e aspectos de experiência do usuário. Na sequência são apresentados brevemente estes jogos e para mais detalhes é só acessar o artigo completo \cite{deSales_SousaeSilva_2020}.
+Nesta sessão estão apresentados os estudos sobre jogos educacionais em IHC, aplicados em cursos de graduação e pós graduação. Estes trabalhos são resultado de uma Revisão Sistemática de Literatura da pesquisa de \citeonline{deSales_SousaeSilva_2020}. No estudo foram identificados seis jogos e suas características, os requisitos não funcionais e aspectos de experiência do usuário. Na sequência são apresentados brevemente estes jogos, mais detalhes estão no artigo completo \cite{deSales_SousaeSilva_2020}.
 
 O UsabilityGame, um jogo para um jogador que simula um cenário de uma empresa de desenvolvimento de software fictíıcia (Booble Corporate), onde o jogador encarna o papel de engenheiro de usabilidade e participa de um processo de desenvolvimento relacionados a design de interação \cite{sommariva}.
 

@@ -1,22 +1,49 @@
+% Épicos: Conteúdo didático, Dinânima de questões, Fluxo do jogo, Fluxo da partida e Personas
+
+
+% Descrever a rastreabilidade de cada requisito (?)
 \begin{table}[htbp]
     \centering
-\caption{Requisitos Funcionais}
+\caption{\textcolor{textmodified}{Requisitos Funcionais}}
 \label{tab:Table_rf}
-\begin{tabular}{|l|l|l|}
+\begin{tabular}{|p{0.9cm}|p{2.5cm}|p{9.3cm}|p{1.9cm}|}
 \hline
-ID   & Nome                                                                          & Descrição                                                                                                                                                                                                                \\ \hline
-RF01 & \begin{tabular}[c]{@{}l@{}}Conteúdo didático\end{tabular} & \begin{tabular}[c]{@{}l@{}}O jogo deve dispor do conteúdo sobre personas \\em forma de resumos e dicas nas questões.\end{tabular} \\ \hline
+\textcolor{textmodified}{ID}   & \textcolor{textmodified}{Épico}          & \textcolor{textmodified}{Descrição} & \textcolor{textadded}{Priorização}                                                                                                                                                                                                               \\ \hline
+\textcolor{textmodified}{RF01} & \textcolor{textmodified}{Conteúdo didático} &\textcolor{textmodified}{O jogo deve dispor do conteúdo sobre personas de forma objetiva, em resumos e dicas nas questões.} & \textcolor{textadded}{SHOULD} \\ \hline
 
-RF02 & Dinâmica das questões        & \begin{tabular}[c]{@{}l@{}}As questões devem conter o texto da pergunta e \\alternativas de múltipla escolha ou de verdadeiro \\ou falso. Deve ser possível confirmar a resposta \\selecionada antes de enviá-la para validação.\end{tabular}  \\ \hline
+\textcolor{textmodified}{RF02} & \textcolor{textmodified}{Dinâmica das questões}        & \textcolor{textmodified}{As questões devem conter o texto da pergunta.} & \textcolor{textadded}{MUST}  \\ \hline
 
-RF03 & Resposta ao Usuário       & \begin{tabular}[c]{@{}l@{}}O jogo deve fornecer feedbacks ao usuário de acerto \\ou erro, após a validação da resposta enviada. \\Caso o jogador tenha errado, o jogo deve \\apresentar a resposta correta, caso tenha acertado \\deve apresentar uma mensagem de congratulação ou \\uma recompensa. Ao selecionar uma etapa da fase do \\jogo o jogador deve confirmar se ele deseja iniciá-la. \end{tabular} \\ \hline   
+\textcolor{textmodified}{RF03} & \textcolor{textmodified}{Dinâmica das questões}        & \textcolor{textmodified}{As questões devem permitir o usuário a escolher a resposta entre as alternativas de múltipla escolha ou de verdadeiro ou falso.} & \textcolor{textadded}{MUST}  \\ \hline
 
-RF04 & \begin{tabular}[c]{@{}l@{}}Fluxo da partida\end{tabular}            & \begin{tabular}[c]{@{}l@{}}O jogo deve manter bloqueada uma etapa da fase até \\que a etapa anterior seja concluída. Assim que \\concluída a etapa seguinte é desbloqueada. O jogo \\deve permitir o usuário iniciar uma partida \\selecionando qual etapa da fase ele deseja jogar. Deve \\salvar o progresso do usuário. Deve permitir o \\usuário progredir ao responder às questões ao \\selecionar uma alternativa de resposta. O jogo deve \\validar ao resposta selecionada como certa ou errada.\\ E deve permitir o usuário sair da partida do jogo.\end{tabular} \\ \hline    
+\textcolor{textmodified}{RF04} & \textcolor{textmodified}{Dinâmica das questões}        & \textcolor{textmodified}{Deve ser possível confirmar a resposta selecionada antes de enviá-la para validação.} & \textcolor{textadded}{COULD}  \\ \hline
 
-RF05 & \begin{tabular}[c]{@{}l@{}}Manter o perfil do \\ jogador\end{tabular}             & \begin{tabular}[c]{@{}l@{}}O jogo deve permitir o usuário criar, alterar, \\ visualizar e deletar os seu dados de perfil\end{tabular}\\ \hline
+\textcolor{textmodified}{RF05} & \textcolor{textmodified}{Resposta ao Usuário}       & \textcolor{textmodified}{O jogo deve validar a resposta e fornecer \textit{feedbacks} ao usuário de resposta certa ou errada.} & \textcolor{textadded}{MUST}  \\ \hline   
 
-RF06 & Acesso ao jogo                                                               & \begin{tabular}[c]{@{}l@{}}Deve ser possível fazer login, se cadastrar e \\ recuperar a senha para ser acessado o jogo e \\ também fazer logout. Deve ser possível o jogador \\acessar o jogo sem fazer login, porém o progresso \\do jogo é mantido durante a sessão. \end{tabular}\\ \hline
+\textcolor{textmodified}{RF06} & \textcolor{textmodified}{Resposta ao Usuário}       & \textcolor{textmodified}{Caso o jogador tenha errado uma questão, o jogo deve apresentar a resposta correta.} & \textcolor{textadded}{MUST}  \\ \hline
 
-RF07 & Completar Personas                                                            & \begin{tabular}[c]{@{}l@{}}O jogo deve armazenar as características das \\ personas, dos cards coletados durante as partidas \\ do jogo. E deve ser possível visualizá-las em \\ suas respectivas personas.\end{tabular} \\ \hline
+\textcolor{textmodified}{RF07} & \textcolor{textmodified}{Resposta ao Usuário}       & \textcolor{textmodified}{Caso o jogador tenha acertado uma questão, o jogo deve apresentar uma mensagem de congratulação ou uma recompensa, com a explicação da resposta correta.} & \textcolor{textadded}{SHOULD}  \\ \hline
+
+\textcolor{textmodified}{RF08} & \textcolor{textmodified}{Fluxo da partida}          & \textcolor{textmodified}{O jogo deve manter bloqueada uma etapa da fase até que a etapa anterior seja concluída.} & \textcolor{textadded}{MUST} \\ \hline
+
+\textcolor{textmodified}{RF09} & \textcolor{textmodified}{Fluxo da partida}          & \textcolor{textmodified}{O jogo deve permitir o usuário iniciar uma partida selecionando a etapa da fase que ele deseja jogar.} & \textcolor{textadded}{MUST} \\ \hline
+
+\textcolor{textmodified}{RF10} & \textcolor{textmodified}{Fluxo da partida}            & \textcolor{textmodified}{Ao selecionar uma etapa da fase o jogador deve confirmar se ele deseja iniciá-la.} & \textcolor{textadded}{COULD} \\ \hline
+
+\textcolor{textmodified}{RF11} & \textcolor{textmodified}{Fluxo da partida}            & \textcolor{textmodified}{O jogo deve permitir o usuário sair da partida.} & \textcolor{textadded}{COULD} \\ \hline
+
+\textcolor{textadded}{RF12} & \textcolor{textadded}{Fluxo da partida}            & \textcolor{textadded}{O jogo deve permitir o usuário progredir ao responder as questões corretamente.} & \textcolor{textadded}{MUST} \\ \hline
+
+\textcolor{textadded}{RF13} & \textcolor{textadded}{Fluxo da partida}            & \textcolor{textadded}{O jogo deve fornecer um tempo limite para que o jogador responda as questões de uma etapa.} & \textcolor{textadded}{SHOULD} \\ \hline
+
+\textcolor{textmodified}{RF14} & \textcolor{textmodified}{Fluxo de jogo}            & \textcolor{textmodified}{O jogo deve permitir o usuário a visualizar as fases e etapas, o conteúdo didático e a área de recompensas.} & \textcolor{textadded}{MUST} \\ \hline
+
+\textcolor{textmodified}{RF15} & \textcolor{textmodified}{Fluxo de jogo}             & \textcolor{textmodified}{O jogo deve salvar o progresso do jogador durante a sessão.} & \textcolor{textadded}{SHOULD} \\ \hline
+
+\textcolor{textmodified}{RF16} & \textcolor{textmodified}{Recompensas}                 & \textcolor{textmodified}{O jogo deve salvar os cards de personas coletados durante as partidas do jogo. E deve ser possível visualizá-las em suas respectivas áreas de recompensa.} & \textcolor{textadded}{SHOULD} \\ \hline
+
+\textcolor{textadded}{RF17} & \textcolor{textadded}{Recompensas}                 & \textcolor{textadded}{O jogo deve permitir o jogador a ganhar medalhas como recompensa por completar desafios do jogo.} & \textcolor{textadded}{SHOULD} \\ \hline
+
+\textcolor{textadded}{RF18} & \textcolor{textadded}{Recompensas}                 & \textcolor{textadded}{O jogo deve possuir medalhas de recompensa de ouro, prata e bronze. Ouro é o maior e bronze é o menor desempenho dentro do jogo.} & \textcolor{textadded}{COULD} \\ \hline
+
 \end{tabular}
 \end{table}

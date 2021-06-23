@@ -15,70 +15,125 @@ Em outras palavras, embora fictícia, uma \textit{persona} é definida com um ri
 
 Para um engenheiro de software ter o conhecimento de tal técnica se faz necessário em situações nas quais o público-alvo do sistema engloba muitas pessoas ou que é custosa a presença frequente do usuário durante as etapas do projeto. Desta forma torna-se difícil a validação constante do design, o que pode acarretar num produto que não atenda os objetivos e necessidades do cliente \cite[p. 176]{barbosa_silva}.
 
-Num cenário de trabalho remoto, onde existe essa dificuldade de interação com o usuário, a importância do conhecimento desta técnica para o profissional de desenvolvimento de software justifica a escolha do tema do jogo. Neste trabalho é apresentado o PersonaDesignGame, um jogo educacional sobre personas. Ele é um jogo do gênero de perguntas e respostas, onde o jogador progride ao responder corretamente às questões. Ao longo das fases o jogador recebe recompensas, que irão compor algumas personas e ao final, o jogador terá exemplos de personas. Na seção a seguir são detalhados os objetivos geral e específicos deste trabalho.
-
+{\color{textmodified}
+Num cenário de trabalho remoto, no qual existe essa dificuldade de interação com o usuário, a importância do conhecimento desta técnica para o profissional de desenvolvimento de software justifica a escolha do tema do jogo. Neste trabalho é apresentado o PersonaDesignGame, um jogo educacional sobre personas. Ele é um jogo do gênero de perguntas e respostas, onde o jogador progride ao responder corretamente às questões. Ao longo das fases o jogador recebe recompensas, que irão compor algumas personas e ao final, o jogador terá exemplos de personas construídas.
+}
 \section{Objetivos}
+\label{sec:objetivos}
+
+{\color{textadded}
+Nesta seção é apresentado os objetivos geral e específicos deste trabalho.
+}
 
 \subsection{Objetivo Geral}
 
 O objetivo geral deste trabalho é desenvolver um jogo digital que auxilie o processo de ensino-aprendizagem dos conceitos sobre \textit{personas} em IHC.
 
 \subsection{Objetivo Específico}
+\label{ssec:obj_especifico}
 \begin{itemize}
     \item \textbf{OE01} - Desenvolver conhecimento sobre os conceitos principais envolvidos neste trabalho;
     \item \textbf{OE02} - Utilizar personas que representem os jogadores-alvo durante o processo de desenvolvimento;
     \item \textbf{OE03} - Aplicar alguns conceitos fundamentais da Engenharia de Software, no processo de design e desenvolvimento de um jogo digital; e    
     \item \textbf{OE04} - Desenvolver o jogo digital para apoio ao ensino e aprendizado de personas;
-    \item \textcolor{blue}{\textbf{OE05} - Aplicar conceitos de DevOps para a configuração do ambiente de desenvolvimento de um jogo digital.}
 \end{itemize}
 
 \section{Plano de Trabalho}
+\label{sec:plano_trab}
+{\color{textmodified}
+Primeiramente foi realizado o planejamento identificando os requisitos necessários para a realização do projeto, mapeando as atividades a serem realizadas e construindo um cronograma \cite[p. 74]{Pressman_2000}. Foi tomado por base a própria dinâmica do desenvolvimento do Trabalho de Conclusão de Curso presente no curso de Engenharia de Software, porém sofrendo uma adaptação, no qual o projeto é dividido em três fases: TCC1.1, TCC1.2 e TCC2. 
 
-Primeiramente foi realizado o planejamento identificando os requisitos necessários para a realização do projeto, mapeando as atividades a serem realizadas e construindo um cronograma \cite[p. 74]{Pressman_2000}. Foi tomado por base a própria dinâmica do desenvolvimento do Trabalho de Conclusão de Curso, onde este projeto é dividido em duas fases: TCC1 e TCC2. Na Figura \ref{Fig:eap.png}, são apresentadas as fases e suas respectivas atividades em forma de uma Estrutura Analítica de Projeto \cite[p. 112]{pmbok}. %ES pg 74
-
-\begin{figure}[htbp]
-	\centering
-		\includegraphics[keepaspectratio=true,scale=0.60]{figuras/eap.png}
-	\caption{Estrutura Analítica do Projeto - Próprio Autor}
-	\label{Fig:eap.png}
-\end{figure}
-
-As macro atividades apresentadas na EAP tem relação com o objetivo deste trabalho. Elas são subdivididas outras vez, evidenciando atividades mais específicas que têm propósito de atingir os seus objetivos específicos. Abaixo é relatada a relação entre atividades e objetivos. 
-
-Na fase do TCC 1:
-
-\begin{itemize}
-    \item A macro atividade Pesquisa Científica é composta pelas atividades de Planejamento da Pesquisa e Revisão Bibliográfica tendo como finalidade alcançar o OE01;
-    \item A macro atividade Definição do Escopo é formada pelas atividades do Survey e Elaboração das Personas com foco em alcançar o OE02; e
-    \item A macro atividade Planejamento do Jogo é composta pelas atividades de Estruturação do Processo de Desenvolvimento, Ideação do Jogo e Elaboração do Software possuindo como objetivo o OE02, o OE03 e o OE04.
-\end{itemize}
-
-Na fase do TCC 2:
-
-\begin{itemize}
-    \item A macro atividade Pesquisa Científica é composta pelas atividades de Apresentação dos Resultados e Considerações Finais tendo como objetivo o OE01; e
-    \item A macro atividade Desenvolvimento do Jogo é composta pelas atividades de Construção do Software e Estruturação para Contribuição possuindo como objetivo o OE02, OE03 e OE04.
-\end{itemize}
-
-Essas atividades são abordadas ao longo do projeto por meio de passos, etapas e tarefas. Estas estão apresentadas no Capítulo \ref{chap:Metodo}, estando elas organizadas num processo metodológico a fim de serem alcançados os objetivos deste estudo. Segue apresentado na Figura \ref{Fig:cronograma.png} o cronograma destas atividades ao longo das fases de entrega, TCC 1 e TCC 2.
+Esta divisão de TCC1.1 e TCC1.2 foi feita devida a dupla do trabalho cursar a disciplina de TCC1 em semestres distintos. O TCC1.1 foi realizado pelo autor Mateus Augusto e o TCC1.2 pelo autor Rossicler Júnior. Na Figura \ref{Fig:eap2.png} são apresentadas as fases e suas respectivas atividades em forma de uma Estrutura Analítica de Projeto (EAP) \cite[p. 112]{pmbok}. %ES pg 74
+}
 
 \newpage
+
 \begin{figure}[htbp]
 	\centering
-		\includegraphics[keepaspectratio=true,scale=0.42]{figuras/cronograma.png}
-	\caption{Cronograma de Trabalho - Fonte: Próprio Autor}
-	\label{Fig:cronograma.png}
+		\includegraphics[angle=90,origin=c,keepaspectratio=true,scale=0.5]{figuras/eap2.png}
+	\caption{{\color{textadded}Estrutura Analítica do Projeto - Próprios Autores}}
+	\label{Fig:eap2.png}
 \end{figure}
+
+{\color{textmodified}
+As macro atividades apresentadas na EAP (Figura \ref{Fig:eap2.png}) tem relação com o objetivo deste trabalho. Elas são subdivididas outras vez, evidenciando atividades mais específicas que têm propósito de atingir os seus objetivos específicos. A seguir é relatada a relação entre atividades e objetivos e o cronograma para cada uma das fases do trabalho. 
+}
+\newpage
+\subsection{\textcolor{textmodified}{Fase do TCC 1.1  realizada pelo autor Mateus Augusto}}
+
+{\color{textadded}
+A Figura \ref{Fig:cronograma_tcc1_1.png} apresenta o cronograma seguido para a execução das atividades definidas na EAP (Figura \ref{Fig:eap2.png}) na fase do TCC1.1. A seguir são listadas as atividades da EAP fazendo a relação com os objetivos específicos do trabalho (Subseção \ref{ssec:obj_especifico}).
+}
+
+\begin{figure}[htbp]
+	\centering
+		\includegraphics[keepaspectratio=true,scale=0.81]{figuras/cronograma_tcc1.1.png}
+	\caption{\textcolor{textmodified}{Cronograma de Trabalho TCC1.1 - Fonte: Mateus Augusto}}
+	\label{Fig:cronograma_tcc1_1.png}
+\end{figure}
+
+{\color{textmodified}
+\begin{itemize}
+    \item A macro atividade 'pesquisa científica' é composta pelas atividades de 'planejamento da pesquisa' e 'revisão bibliográfica' tendo como finalidade alcançar o OE01;
+    \item A macro atividade 'definição do escopo' é formada pelas atividades do 'survey' e 'elaboração das personas' com foco em alcançar o OE02; e
+    \item A macro atividade 'planejamento do jogo' é composta pelas atividades de 'estruturação do processo de desenvolvimento', 'ideação do jogo' e 'elaboração do software' possuindo como objetivo o OE02, o OE03 e o OE04.
+\end{itemize}
+}
+\newpage
+\subsection{\textcolor{textmodified}{Fase do TCC 1.2 realizada pelo autor Rossicler Júnior}}
+{\color{textadded}
+
+A Figura \ref{Fig:cronograma_tcc1_2.png} apresenta o cronograma seguido para a execução das atividades definidas na EAP (Figura \ref{Fig:eap2.png}) na fase do TCC1.2. A seguir são listadas as atividades da EAP fazendo a relação com os objetivos específicos do trabalho (Subseção \ref{ssec:obj_especifico}).
+
+\begin{figure}[htbp]
+	\centering
+		\includegraphics[keepaspectratio=true,scale=0.81]{figuras/cronograma_tcc1.2.png}
+	\caption{\textcolor{textadded}{Cronograma de Trabalho TCC1.2 - Fonte: Rossicler Júnior}}
+	\label{Fig:cronograma_tcc1_2.png}
+\end{figure}
+
+\begin{itemize}
+    \item A macro atividade 'pesquisa científica' é composta pelas atividades de 'planejamento da pesquisa' e 'revisão bibliográfica' tendo como finalidade alcançar o OE01;
+    \item A macro atividade 'protótipo' é formada pelas atividades de 'validação do protótipo de baixa fidelidade' e 'criação do de alta fidelidade' com foco em alcançar o OE03; e
+    \item A macro atividade 'planejamento do jogo' é composta pelas atividades de 'possíveis evoluções no jogo', 'definição de arquitetura', 'configuração do ambiente de desenvolvimento' possuindo como objetivo o OE03 e o OE04.
+\end{itemize}
+}
+\newpage
+\subsection{\textcolor{textmodified}{Fase do TCC 2 que será realizada por ambos autores}}
+\label{ssec:tcc2}
+
+{\color{textadded}
+A Figura \ref{Fig:cronograma_tcc2.png} apresenta o cronograma seguido para a execução das atividades definidas na EAP (Figura \ref{Fig:eap2.png}) na fase do TCC2. A seguir são listadas as atividades da EAP fazendo a relação com os objetivos específicos do trabalho (Subseção \ref{ssec:obj_especifico}).
+}
+
+\begin{figure}[htbp]
+	\centering
+		\includegraphics[keepaspectratio=true,scale=0.81]{figuras/cronograma_tcc2.PNG}
+	\caption{\textcolor{textmodified}{Cronograma de Trabalho TCC2 - Fonte: Próprios Autores}}
+	\label{Fig:cronograma_tcc2.png}
+\end{figure}
+
+{\color{textmodified}
+\begin{itemize}
+    \item A macro atividade 'pesquisa científica' é composta pelas atividades de 'apresentação dos resultados' e 'considerações finais' tendo como objetivo o OE01; e
+    \item A macro atividade 'desenvolvimento do jogo' é composta pelas atividades de 'criação e validação do protótipo de alta fidelidade', 'configuração do ambiente de desenvolvimento', 'estudo das tecnologias', 'construção do software' e 'estruturação para contribuição' possuindo como objetivo o OE02, OE03 e OE04.
+\end{itemize}
+}
+
+{\color{textmodified}
+As atividades presentes no EAP (Figura \ref{Fig:eap2.png}) são abordadas ao longo do projeto por meio de passos, etapas e tarefas. Estas estão apresentadas no Capítulo \ref{chap:Metodo}, organizadas em um processo metodológico a fim de serem alcançados os objetivos deste estudo.}
 
 \section{Estrutura do Trabalho}
 
-Este trabalho está estruturado, até o momento, em quatro capítulos. O presente capítulo mostra uma visão geral dos conceitos que contextualizam este trabalho. Além disso é apresentado seu objetivo, o plano de trabalho e sua estrutura organizacional.
+Este trabalho está estruturado, até o momento, em quatro capítulos. Este, o Capítulo \ref{chap:intro}, mostra uma visão geral dos conceitos que contextualizam este trabalho. Além disso é apresentado seu objetivo, o plano de trabalho e sua estrutura organizacional.
 
 O Capítulo \ref{chap:Metodo}, apresenta a estrutura do processo metodológico utilizado neste trabalho. Nele é relatado a metodologia usada da revisão da bibliográfica até o desenvolvimento do jogo.  
 
 O Capítulo \ref{chap:ref}, apresenta os principais conceitos que envolvem este trabalho e como eles se relacionam. Neste capítulo está descrito uma base sobre IHC, Personas e Jogos.
 
-O Capítulo \ref{chap:des}, apresenta o progresso do desenvolvimento do projeto. Neste primeiro momento são relatados resultados parciais do design técnico e de ideação do jogo.
+{\color{textmodified}
+O Capítulo \ref{chap:des}, apresenta o progresso do desenvolvimento do projeto. Neste primeiro momento são relatados resultados parciais do design técnico, da ideação do jogo e de definições do software.
+}
 
 %O capítulo Apresentação dos Resultados...
 
